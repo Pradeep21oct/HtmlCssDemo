@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.error{
+color:red;
+}
+</style>
+<script>
+
+function validate(){
+	
+	var userId=document.getElementById("uid").value;
+	var pwd=document.getElementById("pass").value;
+	document.getElementById("passmsg").innerHTML="";
+	document.getElementById("uidmsg").innerHTML="";
+	if(userId.length==0){
+		//alert("User Id can not be empty");
+		document.getElementById("uidmsg").innerHTML="User Id can not be empty";
+		return false;
+	}
+	if(pwd.length==0){
+		//alert("Password field can not be empty");
+		document.getElementById("passmsg").innerHTML="Password field can not be empty";
+		return false;
+	}
+	if(pwd.length<8){
+		//alert("Password field should be greater than 8 characters");
+		document.getElementById("passmsg").innerHTML="Password field should be greater than 8 characters";
+		return false;
+	}
+	
+	return true;
+	
+}
+</script>
+
+</head>
+<body>
+
+<H2>User Registration Form</H2>
+<form action="login.jsp" method="post"  onsubmit="return validate();">
+User Id : &nbsp;&nbsp;&nbsp;<input type="text" name="uid" id="uid"><div id="uidmsg" class="error"> </div><br>
+
+Password : <input type="password"  name="pass" id="pass"><div id="passmsg" class="error"> </div><br>
+
+
+<input type="submit" value="Login"><input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>
+
+
+
+
