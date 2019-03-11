@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+.oddcss{  background-color:red; }
+.evencss{   background-color:blue; }
+</style>
+
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+	  //alert("hi");
+	 // $("tr:odd").css("background-color","blue");
+	 // $("tr:even").css("background-color","red");
+    
+	 $("tr:odd").addClass("oddcss");
+	 $("tr:even").addClass("evencss");
+  });
+});
+</script>
+</head>
+<body>
+
+<table border="2">
+<tr><td>Eno</td><td>Ename</td></tr>
+<tr><td>101</td><td>abc</td></tr>
+<tr><td>102</td><td>xyz</td></tr>
+<tr><td>103</td><td>lmn</td></tr>
+</table>
+
+<button>Format</button>
+
+</body>
+</html>

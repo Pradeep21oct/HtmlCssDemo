@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $(":button").click(function(){
+	  
+	  var data={};
+	  data.a=$("#a").val();
+	  data.b=$("#b").val();
+	  
+	 // alert(data);
+    $.get("add.jsp",data,function(result,status){
+      $("#result").html("Addition: " + result);
+    });
+  });
+});
+</script></head>
+<body> <h1 align="center"><font color="#000080">Ajax Example</font></h1>
+          <form name="f1">
+               <input name="a" id="a" value=""><br>
+               <input name="b" id="b" value=""><br>
+               <div id="result"></div><br>
+               <input type="button" value="Add">
+          </form>
+</body>
+</html>
+

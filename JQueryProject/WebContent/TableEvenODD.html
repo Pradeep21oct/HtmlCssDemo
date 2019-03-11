@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.odd{  
+     background-color: #00ff00;
+}
+.even{
+  background-color: yellow;
+}
+</style>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#oddbtn").click(function(){
+    $("#table1 tr:odd").addClass("odd");
+  });
+  $("#evenbtn").click(function(){
+	  $("#table1 tr:even").addClass("even");
+  });
+});
+</script>
+
+</head>
+<body>
+<table border="3" cellspacing="0" cellpadding="5" id="table1">
+<tr><td>Eno</td><td>Ename</td><td>Salary</td></tr>
+<tr><td>100</td><td>ABC</td><td>2300</td></tr>
+<tr><td>101</td><td>sss</td><td>3400</td></tr>
+<tr><td>102</td><td>ggg</td><td>2300</td></tr>
+<tr><td>103</td><td>bbb</td><td>5500</td></tr>
+</table>
+<button id="oddbtn">Odd</button>
+<button id="evenbtn">Even</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("process.jsp",function(emp){
+     // $.each(emp, function(field,val){
+        $("div").append("Eno :  "+emp.eno);
+        $("div").append("Ename :  "+emp.ename);
+    //  });
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Get JSON data</button>
+<div></div>
+
+</body>
+</html>
+
+
