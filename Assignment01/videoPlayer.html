@@ -7,13 +7,13 @@
     <script src='media-player.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div id='media-player' class='embed-responsive embed-responsive-4by3'>
+<div id='media-player' class='container'>
   <div>
     <video id='media-video'  width="500"  height="500" controls>
         <source src='movie.mp4' type='video/mp4'>
@@ -33,11 +33,11 @@
         <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress><br>
 
 
-        <button class="glyphicon glyphicon-play-circle" onclick="play();" ></button>
-        <i class="glyphicon glyphicon-pause" onclick="pause();"></i>
-        <i class="glyphicon glyphicon-volume-up" onclick='changeVolume("+");'></i>
+        <i id="play" class="glyphicon glyphicon-play-circle" onclick="play();" ></i>
+        <i  id="pause" class="glyphicon glyphicon-pause" onclick="pause();"></i>
+        <i  class="glyphicon glyphicon-volume-up" onclick='changeVolume("+");'></i>
         <i class="glyphicon glyphicon-volume-down" onclick='changeVolume("-");'></i>
-        <i class="glyphicon glyphicon-stop" onclick='stopPlayer();'></i>
+        <i id="stop" class="glyphicon glyphicon-stop" onclick='stopPlayer();'></i>
         <i class="glyphicon glyphicon-volume-off"  id="mute-button" onclick='toggleMute("true");'></i>
         <i id='like' class="glyphicon glyphicon-thumbs-up" title='like' onclick='like();'><span id="likecount" /></i>
         <i id='unlike' class='glyphicon glyphicon-thumbs-down' title='like' onclick='unlike();'><span id="unlikecount" /></i>

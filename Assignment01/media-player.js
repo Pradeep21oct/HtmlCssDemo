@@ -16,10 +16,15 @@ function init(){
     mediaPlayer.controls=false;
     document.getElementById("unlikecount").innerHTML=localStorage.unlikeclickcount;
     document.getElementById("likecount").innerHTML=localStorage.likeclickcount;
-    mediaPlayer.addEventListener('play',null,false);
-    mediaPlayer.addEventListener('pause',function(){disableButton(pauseBtn);},false);
+    mediaPlayer.addEventListener('play',function(){
+
+    },false);
+    mediaPlayer.addEventListener('pause',function(){disableButton(pauseBtn);
+
+
+    },false);
     mediaPlayer.addEventListener('timeupdate', updateProgressBar, false);
-    mediaPlayer.addEventListener('volumechange', null, false);
+
 
 
 
