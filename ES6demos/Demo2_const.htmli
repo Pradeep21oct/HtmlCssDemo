@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" /> 
+</head>
+<body>  
+<script>
+const x = 12;
+const x = 13;
+if(true)
+{
+    const x = 13;     
+    const y = 11;
+}
+const y = 12;
+
+</script>
+  </body>
+</html>

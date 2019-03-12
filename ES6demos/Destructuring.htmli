@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" /> 
+</head>
+<body>  
+<script>
+var [first, second, third] = ["Andrew", "Craig", "Kenneth"];
+
+So first is "Andrew", second is "Craig" and finally there is "Kenneth".
+
+
+
+var person = {
+  firstName: "Andrew",
+  lastName: "Chalkley"
+}
+
+var {firstName, lastName} = person;
+</script>
+  </body>
+</html>

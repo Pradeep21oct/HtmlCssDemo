@@ -48,9 +48,10 @@ function togglePlayPause(){
 
 
 function play(){
-    var btn=document.getElementById("play-button");
+    var btn=document.getElementById("play");
     if(mediaPlayer.pause||mediaPlayer.ended){
         mediaPlayer.play();
+        btn.addCSS('#play')
        }
 
 

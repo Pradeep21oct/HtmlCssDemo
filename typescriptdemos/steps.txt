@@ -1,0 +1,41 @@
+
+Visual Studio 2013 -> 
+Eclipse -> PlugIn ->
+WebStorm ->
+Sublime ->
+Aptana Studio -> 
+
+Steps ->
+1-> Install NodeJS
+    Installer on nodejs website
+
+2-> Install typescript
+node install -g typescript 
+
+3->tsc app.ts 
+
+4->HTML ->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

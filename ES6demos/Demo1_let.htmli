@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" /> 
+</head>
+<body>  
+<script>
+if(true)
+{
+    let x = 12;
+    alert(x); //alert's 12
+}
+alert(x); //x is undefined here
+</script>
+</body>
+</html>

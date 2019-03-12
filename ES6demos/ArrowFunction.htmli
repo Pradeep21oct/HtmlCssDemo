@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" /> 
+</head>
+<body>  
+<script>
+var sum = (x, y) => x + y;
+
+console.log(sum(2, 900)); //902
+
+var sum = (x, y) => {
+    x = x + 10;
+    y = y + 10;
+    return x + y;
+}
+
+console.log(sum(10, 10)); //40
+
+
+function sum(p, q)
+{
+    console.log(p() + q()); //87
+}
+
+sum(a => 20 + 10, b => 1 + 56); //here we are passing two function objects
+</script>
+  </body>
+</html>

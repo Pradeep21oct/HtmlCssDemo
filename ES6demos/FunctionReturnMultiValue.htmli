@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" /> 
+</head>
+<body>  
+<script>
+function function_name()
+{
+    return [1, 6, 7, 4, 8, 0]; 
+}
+
+var q, w, e, r, t, y;
+
+[q, w, , r, , y] = function_name();
+
+alert(y);//y is 0
+
+</script>
+  </body>
+</html>
